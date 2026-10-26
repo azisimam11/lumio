@@ -1,0 +1,142 @@
+import { UserProfile, CommunityRoom } from '../types';
+
+export const MOCK_INTERESTS = [
+  'All Topics',
+  'Gaming & Esports',
+  'Music & Lo-Fi',
+  'Tech & AI',
+  'Language Exchange',
+  'Travel & Culture',
+  'Deep Conversations',
+  'Cinema & Anime',
+  'Creative Arts',
+];
+
+export const MOCK_LANGUAGES = [
+  { code: 'any', label: 'All Languages' },
+  { code: 'en', label: 'English' },
+  { code: 'id', label: 'Bahasa Indonesia' },
+  { code: 'ja', label: 'Japanese' },
+  { code: 'es', label: 'Spanish' },
+  { code: 'fr', label: 'French' },
+  { code: 'de', label: 'German' },
+  { code: 'ko', label: 'Korean' },
+];
+
+export const MOCK_REGIONS = [
+  { code: 'global', label: 'Global / Worldwide' },
+  { code: 'asia', label: 'Asia Pacific' },
+  { code: 'na', label: 'North America' },
+  { code: 'eu', label: 'Europe' },
+  { code: 'latam', label: 'Latin America' },
+];
+
+export const SAMPLE_ICEBREAKERS = [
+  "👋 Hey! What are you listening to right now?",
+  "🌍 Where are you tuning in from today?",
+  "☕ Tea or coffee person?",
+  "🎮 Played any good games recently?",
+  "🚀 What's one place you dream of visiting?",
+];
+
+export const MOCK_PARTNERS: UserProfile[] = [
+  {
+    id: 'partner-1',
+    name: 'Kenji S.',
+    age: 23,
+    country: 'Japan',
+    countryCode: 'JP',
+    avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80',
+    interests: ['Music & Lo-Fi', 'Language Exchange', 'Anime'],
+    languages: ['Japanese', 'English'],
+    bio: 'Synthesizer enthusiast from Tokyo. Learning conversational English!',
+    isVerified: true,
+  },
+  {
+    id: 'partner-2',
+    name: 'Elena Rostova',
+    age: 22,
+    country: 'Canada',
+    countryCode: 'CA',
+    avatarUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80',
+    interests: ['Gaming & Esports', 'Tech & AI', 'Deep Conversations'],
+    languages: ['English', 'French'],
+    bio: 'Software student in Vancouver. Love indie games and synthwave.',
+    isVerified: true,
+  },
+  {
+    id: 'partner-3',
+    name: 'Rian Pratama',
+    age: 24,
+    country: 'Indonesia',
+    countryCode: 'ID',
+    avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80',
+    interests: ['Travel & Culture', 'Tech & AI', 'Music & Lo-Fi'],
+    languages: ['Bahasa Indonesia', 'English'],
+    bio: 'Digital nomad & coffee addict currently exploring Southeast Asia.',
+    isVerified: true,
+  },
+  {
+    id: 'partner-4',
+    name: 'Sofia Gomez',
+    age: 21,
+    country: 'Spain',
+    countryCode: 'ES',
+    avatarUrl: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80',
+    interests: ['Creative Arts', 'Cinema & Anime', 'Language Exchange'],
+    languages: ['Spanish', 'English', 'Italian'],
+    bio: 'Graphic designer from Barcelona. Always down for creative chats.',
+    isVerified: true,
+  },
+];
+
+export const MOCK_COMMUNITY_ROOMS: CommunityRoom[] = [
+  {
+    id: 'room-1',
+    title: 'Late Night Chill & Lo-Fi Beats',
+    description: 'Casual chill room for unwinding, sharing music, and quiet late conversations.',
+    category: 'Music & Lo-Fi',
+    activeCount: 18,
+    maxCount: 25,
+    tags: ['Relax', 'Music', 'No Rush'],
+    isVoiceActive: true,
+    hostAvatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80',
+    hostName: 'DJ Miko',
+  },
+  {
+    id: 'room-2',
+    title: 'Global Tech & Startup Builders',
+    description: 'Discussing open source, side projects, design systems, and WebRTC architectures.',
+    category: 'Tech & AI',
+    activeCount: 12,
+    maxCount: 20,
+    tags: ['Devs', 'Founders', 'Tech'],
+    isVoiceActive: true,
+    hostAvatar: 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80',
+    hostName: 'Arun K.',
+  },
+  {
+    id: 'room-3',
+    title: 'Language Café: English & Japanese',
+    description: 'Bilingual practice room for native speakers and enthusiastic language learners.',
+    category: 'Language Exchange',
+    activeCount: 15,
+    maxCount: 20,
+    tags: ['Bilingual', 'Friendly', 'Practice'],
+    isVoiceActive: true,
+    hostAvatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80',
+    hostName: 'Yuki & Sarah',
+  },
+  {
+    id: 'room-4',
+    title: 'Indie Gaming & Game Dev Lounge',
+    description: 'Sharing game highlights, indie recommendations, and playtesting thoughts.',
+    category: 'Gaming & Esports',
+    activeCount: 9,
+    maxCount: 15,
+    tags: ['Steam', 'Indie', 'Speedrun'],
+    isVoiceActive: false,
+    hostAvatar: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=150&q=80',
+    hostName: 'Marcus V.',
+  },
+];
